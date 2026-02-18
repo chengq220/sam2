@@ -4,6 +4,7 @@ pip install -e .
 
 cd checkpoints
 wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_tiny.pt
+wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_base_plus.pt
 cd ..
 
 mkdir data
