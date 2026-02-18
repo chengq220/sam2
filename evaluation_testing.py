@@ -88,3 +88,17 @@ if __name__ == '__main__':
                 preds, _, _ = predictor.predict(box=prompt)
                 preds = preds.transpose((1,2,0))
                 
+# https://blog.roboflow.com/sam-2-video-segmentation/
+
+points = np.array([[703, 303]], dtype=np.float32)
+labels = np.array([1])
+frame_idx = 0
+tracker_id = 1
+
+_, object_ids, mask_logits = sam2_model.add_new_points(
+    inference_state=inference_state,
+    frame_idx=frame_idx,
+    obj_id=tracker_id,
+    points=points,
+    labels=labels,
+)
