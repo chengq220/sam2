@@ -6,5 +6,5 @@ python tools/vos_inference.py \
     --output_mask_dir "./results/sam2.1/endovis_2017" \
     --input_mask_dir "./data/VOS-Endovis17/valid/VOS" \
     --base_video_dir "./data/VOS-Endovis17/valid/JPEGImages" \
-    --gt_root "./data/VOS-Endovis2017/valid/Annotations" \
+    --gt_root "./data/VOS-Endovis17/valid/Annotations" \
     --gpu_id 0
