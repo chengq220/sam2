@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
 pip install -e .
+pip install gdown
+pip install opencv-python
+pip install scikit-image
 
 cd checkpoints
-wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_tiny.pt
-wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_base_plus.pt
+wget https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_base_plus.pt
+wget https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt
 cd ..
 
 mkdir data
